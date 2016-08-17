@@ -8,5 +8,6 @@ namespace Mozimo.CMS.Data
 {
     public class Class1
     {
+        public int GetId { get; set; }
     }
 }
