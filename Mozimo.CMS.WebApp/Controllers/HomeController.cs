@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using Mozimo.CMS.Data;
 
 namespace Mozimo.CMS.WebApp.Controllers
 {
@@ -11,6 +12,11 @@ namespace Mozimo.CMS.WebApp.Controllers
     {
         public IActionResult Index()
         {
+            var DB = new MzmDbcontext();
+            DB.Database.EnsureCreated();
+            for (var i = 0; i < 50; i++)
+                DB.News.Add(new Data.Domain.News.News { Title = "Hello",Content = "MyCat" });
+            DB.SaveChanges();
             return View();
         }
 

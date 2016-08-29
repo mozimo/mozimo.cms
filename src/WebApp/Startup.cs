@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Mozimo.CMS.WebApp
+namespace WebApp
 {
     public class Startup
     {
@@ -22,7 +22,6 @@ namespace Mozimo.CMS.WebApp
 
             if (env.IsDevelopment())
             {
-                
                 // This will push telemetry data through Application Insights pipeline faster, allowing you to view results immediately.
                 builder.AddApplicationInsightsSettings(developerMode: true);
             }
@@ -36,9 +35,9 @@ namespace Mozimo.CMS.WebApp
         {
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
-            //services.AddSingleton  sss
+
             services.AddMvc();
-        } 
+        }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)

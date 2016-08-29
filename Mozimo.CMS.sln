@@ -3,13 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mozimo.CMS.Web", "Mozimo.CMS.Web", "{74BB7F7A-A84D-49EA-B997-92921CB66638}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AAE1AD71-447F-415A-9042-BA6EA35584C9}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Mozimo.CMS.WebApp", "Mozimo.CMS.WebApp\Mozimo.CMS.WebApp.xproj", "{20D969BF-65BA-440D-805E-612DF608A7B0}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mozimo.CMS.Core", "Mozimo.CMS.Core", "{154F7198-D5B4-4B93-9DC9-5F26D34A391E}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Mozimo.CMS.Data", "Mozimo.CMS.Data\Mozimo.CMS.Data.xproj", "{3D5D92A9-4256-42D3-8780-1B01D27DFDA8}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebApp", "src\WebApp\WebApp.xproj", "{59C4BFDB-F7AE-4BF8-A0A1-BCA3B6FDE3A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,20 +13,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{20D969BF-65BA-440D-805E-612DF608A7B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{20D969BF-65BA-440D-805E-612DF608A7B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{20D969BF-65BA-440D-805E-612DF608A7B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20D969BF-65BA-440D-805E-612DF608A7B0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3D5D92A9-4256-42D3-8780-1B01D27DFDA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3D5D92A9-4256-42D3-8780-1B01D27DFDA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3D5D92A9-4256-42D3-8780-1B01D27DFDA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3D5D92A9-4256-42D3-8780-1B01D27DFDA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59C4BFDB-F7AE-4BF8-A0A1-BCA3B6FDE3A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C4BFDB-F7AE-4BF8-A0A1-BCA3B6FDE3A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C4BFDB-F7AE-4BF8-A0A1-BCA3B6FDE3A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C4BFDB-F7AE-4BF8-A0A1-BCA3B6FDE3A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{20D969BF-65BA-440D-805E-612DF608A7B0} = {74BB7F7A-A84D-49EA-B997-92921CB66638}
-		{3D5D92A9-4256-42D3-8780-1B01D27DFDA8} = {154F7198-D5B4-4B93-9DC9-5F26D34A391E}
+		{59C4BFDB-F7AE-4BF8-A0A1-BCA3B6FDE3A9} = {AAE1AD71-447F-415A-9042-BA6EA35584C9}
 	EndGlobalSection
 EndGlobal
