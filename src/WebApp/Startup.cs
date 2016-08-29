@@ -26,7 +26,7 @@ namespace WebApp
                 builder.AddApplicationInsightsSettings(developerMode: true);
             }
             Configuration = builder.Build();
-        }
+        } 
 
         public IConfigurationRoot Configuration { get; }
 
